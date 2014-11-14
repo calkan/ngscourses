@@ -179,7 +179,7 @@ NGGTGTCTCTTACGGACAGCATTAAGCTAGATTCTTTTTAGACCGATCTGCCAA
 \end{framed}
 
 
-\small
+\footnotesize
 \begin{tabular}{rll}
   \hline
   {\bf Col} & {\bf Brief description} \\
@@ -415,9 +415,9 @@ IL31_4368:1:54:13142:21400	83	chr1	44	0	54M	=	37	-61	AACCCTAACCCTAACCCTAACCCTAAC
 \frametitle{SAM Specifications}
 \framesubtitle{Record Column}
 \begin{center}
-\small
+\tiny
 \begin{tabular}{rlll}
-  \hline
+  \small
   {\bf Col} & {\bf Field} & {\bf Type} & {\bf Brief description} \\
   \hline
   1 & {\sf QNAME} & String & Query template NAME\\
@@ -444,7 +444,7 @@ IL31_4368:1:54:13142:21400	83	chr1	44	0	54M	=	37	-61	AACCCTAACCCTAACCCTAACCCTAAC
 \frametitle{SAM Specifications}
 \framesubtitle{Record Column}
 \begin{center}
-\small
+\tiny
 \begin{tabular}{rlll}
   \hline
   {\bf Col} & {\bf Field} & {\bf Type} & {\bf Example} \\
@@ -909,7 +909,7 @@ $ tabix  file.vcf.gz chr3:1235-456778
 
 \begin{frame}[fragile]
 \frametitle{Reading SAM with the samtools C library}
-
+Deprecated. Use htslib instead: htslib.org
 \begin{lstlisting}[language=C]
 #include <stdlib.h>
 #include <stdio.h>
@@ -961,6 +961,15 @@ public class CountMapped {
 
 \hugeslide{End}
 
+
+\begin{frame}[fragile]
+\frametitle{Tools \& Libraries}
+\begin{itemize}
+\item SAM/BAM/CRAM: samtools \& htslib \url{http://www.htslib.org}
+\item VCF: vcftools \url{http://vcftools.sourceforge.net/}, \url{BCFtools https://github.com/samtools/bcftools}
+\item Various omics tools: \url{http://omictools.com/}
+\end{itemize}
+\end{frame}
 
 \begin{frame}[fragile]
 \frametitle{Credits}
