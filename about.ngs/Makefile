@@ -22,7 +22,7 @@ $(BASENAME).pdf : $(BASENAME).tex jeter_tmp1.pdf
 	pdflatex --enable-write18 -interaction=errorstopmode -halt-on-error $<
 
 jeter_tmp1.gif:
-	curl -o $@ "http://2.bp.blogspot.com/-IZCOhEYv5Lw/Tb9Zf8DOn1I/AAAAAAAADAo/ySX52LZ5OAQ/s1600/stuff.gif"
+	wget -O $@ "http://2.bp.blogspot.com/-IZCOhEYv5Lw/Tb9Zf8DOn1I/AAAAAAAADAo/ySX52LZ5OAQ/s1600/stuff.gif"
 
 clean: 
 	rm -f $(foreach SUF,dvi aux dvi.pdf log nav out ps pdf snm toc vrb, $(BASENAME).$(SUF) ) *~ $(TOREMOVE)
