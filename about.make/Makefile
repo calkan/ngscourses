@@ -43,7 +43,7 @@ jeter1.png:
 		H2 -> C2; H0 -> C2; C2 -> O2; O2 -> A ;}' | dot -Tpng -o $@
 
 jeter2.jpg:
-	curl -o $@ "https://notendur.hi.is/jonasson/software/make-book/lrg.jpg"
+	wget -O $@ "https://notendur.hi.is/jonasson/software/make-book/lrg.jpg"
 
 clean.tmp:
 	rm -f *.pep *.dna *.protein 

@@ -22,7 +22,7 @@ $(BASENAME).pdf : $(BASENAME).tex jeter_stuff.png
 	pdflatex --enable-write18 -interaction=errorstopmode -halt-on-error $< 
 
 jeter_stuff.png:
-	curl -o jeter_stuff.gif "http://2.bp.blogspot.com/-IZCOhEYv5Lw/Tb9Zf8DOn1I/AAAAAAAADAo/ySX52LZ5OAQ/s1600/stuff.gif"
+	wget -O jeter_stuff.gif "http://2.bp.blogspot.com/-IZCOhEYv5Lw/Tb9Zf8DOn1I/AAAAAAAADAo/ySX52LZ5OAQ/s1600/stuff.gif"
 	convert jeter_stuff.gif jeter_stuff.png
 	rm jeter_stuff.gif
 

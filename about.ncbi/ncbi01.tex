@@ -7,7 +7,7 @@
 \usetheme{Warsaw}
 
 \newcommand{\remoteimage}[3]{
-\IfFileExists{#1}{}{\immediate\write18{curl -o "#1" "#2"}}
+\IfFileExists{#1}{}{\immediate\write18{wget -O "#1" "#2"}}
 \begin{center}
 \includegraphics[#3]{#1}
 \end{center}
@@ -1662,7 +1662,7 @@ export PATH=${PATH}:/path/to/ncbi-blast-2.2.28+/bin
 \framesubtitle{Download a sample}
 apis mellifera proteins
 \begin{lstlisting}[language=bash,basicstyle=\tiny,breaklines=true]
-curl -o protein.fa.gz \
+wget -O protein.fa.gz \
    "ftp://ftp.ncbi.nih.gov/genomes/Apis_mellifera/protein/protein.fa.gz"
 gunzip protein.fa.gz
 \end{lstlisting}

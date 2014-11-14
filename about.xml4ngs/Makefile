@@ -29,10 +29,10 @@ tmp.mk: tmp.xsl project.xml
 	xsltproc $^ > $@
 
 tmp.xsl: 
-	curl -o $@ "https://raw.github.com/lindenb/xml4ngs/master/stylesheets/project2make.xsl"
+	wget -O $@ "https://raw.github.com/lindenb/xml4ngs/master/stylesheets/project2make.xsl"
 
 tmp1.jpg:
-	curl -o $@ "https://pbs.twimg.com/media/A9v2MKXCAAA8hmJ.jpg:large"
+	wget -O $@ "https://pbs.twimg.com/media/A9v2MKXCAAA8hmJ.jpg:large"
 
 tmp2.jpg:
 	echo "digraph G{\
