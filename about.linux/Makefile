@@ -21,17 +21,17 @@ all: $(BASENAME).pdf
 linux01.png: linux01.svg Microsoft_Excel_2013_icon.png
 	inkscape --without-gui --export-latex --export-png=$@ $< 
 
-DOWNLOADIMAGES+=Microsoft_Excel_2013_icon.png
-Microsoft_Excel_2013_icon.png:
-	wget http://www.mcgrawmarketing.com/blog/wp-content/uploads/2013/05/Microsoft_Excel_2013_icon-390x250.png -O Microsoft_Excel_2013_icon.png
+#DOWNLOADIMAGES+=Microsoft_Excel_2013_icon.png
+#Microsoft_Excel_2013_icon.png:
+#	wget http://www.mcgrawmarketing.com/blog/wp-content/uploads/2013/05/Microsoft_Excel_2013_icon-390x250.png -O Microsoft_Excel_2013_icon.png
 
-DOWNLOADIMAGES+=Alphanumeric_keyboard.jpg
-Alphanumeric_keyboard.jpg:
-	wget "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Alphanumeric_keyboard.jpg/478px-Alphanumeric_keyboard.jpg"
+#DOWNLOADIMAGES+=Alphanumeric_keyboard.jpg
+#Alphanumeric_keyboard.jpg:
+#	wget "http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Alphanumeric_keyboard.jpg/478px-Alphanumeric_keyboard.jpg"
 
-DOWNLOADIMAGES+=LG_L194WT-SF_LCD_monitor.jpg
-LG_L194WT-SF_LCD_monitor.jpg:
-	wget "http://upload.wikimedia.org/wikipedia/commons/7/7e/LG_L194WT-SF_LCD_monitor.jpg"
+#DOWNLOADIMAGES+=LG_L194WT-SF_LCD_monitor.jpg
+#LG_L194WT-SF_LCD_monitor.jpg:
+#	wget "http://upload.wikimedia.org/wikipedia/commons/7/7e/LG_L194WT-SF_LCD_monitor.jpg"
 	
 #images:${DOWNLOADIMAGES}
 
